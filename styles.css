@@ -16,8 +16,12 @@ header {
     max-width: 100%;
     max-height: fit-content;
     margin: 0 2%;
-    box-shadow: -0.5em 1.2em 0.7em RGBA(10, 130, 98, 0.35);
-    border-radius: 1em;
+    /*box-shadow: -0.5em 1em 2em RGBA(10, 130, 98, 0.35);
+    border-radius: 2em;*/
     background-color: white;
 }
 
+.avatar {
+    max-height: 90%;
+    margin: 2em;
+}
