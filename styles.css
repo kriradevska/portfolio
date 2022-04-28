@@ -1,0 +1,23 @@
+/* -- Global -- */
+
+html {
+   font-family: serif; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- Header -- */
+
+header {
+    display: inline-flex;
+    max-width: 100%;
+    max-height: fit-content;
+    margin: 0 2%;
+    box-shadow: -0.5em 1.2em 0.7em RGBA(10, 130, 98, 0.35);
+    border-radius: 1em;
+    background-color: white;
+}
+
