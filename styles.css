@@ -12,14 +12,33 @@ body {
 /* -- Header -- */
 
 header {
-    display: inline-flex;
-    max-width: 100%;
-    max-height: fit-content;
+    display: flex;
+    width: 99%;
+    height: fit-content;
     margin: 0 2%;
     background-color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
 }
 
 .avatar {
-    max-height: 90%;
-    margin: 2em;
+    height: auto;
+    flex-shrink: 2;
+}
+
+
+.greeting {
+    flex-direction: column;  
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.greeting h1 {
+    color: #ab320d;
+    font-size: 2em;
+}
+
+.greeting h2 {
+    font-size: 1.5em;
 }
