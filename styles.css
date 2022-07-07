@@ -24,7 +24,7 @@ header {
 
 .avatar {
     height: auto;
-    flex-shrink: 2;
+    flex-shrink: 3;
 }
 
 
@@ -32,13 +32,63 @@ header {
     flex-direction: column;  
     flex-wrap: wrap;
     flex-shrink: 1;
+    text-align: center;
+    padding: 4%;
 }
 
 .greeting h1 {
     color: #ab320d;
-    font-size: 2em;
+    font-size: 400%;
 }
 
 .greeting h2 {
-    font-size: 1.5em;
+    font-size: 270%;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .greeting h1 {
+        font-size: 200%;
+    }
+    
+    .greeting h2 {
+        font-size: 135%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .avatar {
+        max-width: 90%
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+     .avatar {
+        max-width: 60%
+    }
+    
+    .greeting h1 {
+        font-size: 250%;
+    }
+    
+    .greeting h2 {
+        font-size: 135%;
+    }
+
+}
+
+@media only screen and (min-width: 2500px) {
+    .avatar {
+        width: 50%;
+    }
+    
+    .greeting h1 {
+        font-size: 800%;
+    }
+    
+    .greeting h2 {
+        font-size: 340%;
+    }
 }
