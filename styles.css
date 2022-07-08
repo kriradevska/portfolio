@@ -19,12 +19,12 @@ header {
     background-color: white;
     align-items: center;
     justify-content: center;
-    overflow: visible;
 }
 
 .avatar {
     height: auto;
     flex-shrink: 3;
+    opacity: 80%;
 }
 
 
@@ -37,13 +37,20 @@ header {
 }
 
 .greeting h1 {
-    color: #ab320d;
+    color: white;
     font-size: 400%;
+    background-color: #ab320d;
+    padding: 2%;
+    opacity: 80%;
+    border-radius: 0.3em;
 }
 
 .greeting h2 {
     font-size: 270%;
+    margin-top: -0.5em;
 }
+
+/* Breakpoints for Header */
 
 @media only screen and (max-width: 500px) {
 
@@ -91,4 +98,47 @@ header {
     .greeting h2 {
         font-size: 340%;
     }
+}
+
+/* Animation of h1*/
+
+@keyframes bounce {
+    0% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(0, 2%);
+    }
+    20% {
+        transform: translate(0, 5%);
+    }
+    30% {
+        transform: translate(0, 7%);
+    }
+    40% {
+        transform: translate(0, 9%);
+    }
+    50% {
+        transform: translate(0, 11%);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(0, 9%);
+    }
+    70% {
+        transform: translate(0, 7%);
+    }
+    80% {
+        transform: translate(0, 5%);
+    }
+    90% {
+        transform: translate(0, 2%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+header h1 {
+    animation: bounce 10s running linear infinite;
 }
