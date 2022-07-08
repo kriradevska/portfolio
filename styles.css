@@ -7,18 +7,18 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f5f5f5;
 }
 
 /* -- Header -- */
 
 header {
     display: flex;
-    width: 99%;
     height: fit-content;
-    margin: 0 2%;
-    background-color: white;
     align-items: center;
     justify-content: center;
+    background-image: url(https://raw.githubusercontent.com/kriradevska/portfolio/main/style/marble.webp);
+    padding: 2em;
 }
 
 .avatar {
@@ -48,6 +48,13 @@ header {
 .greeting h2 {
     font-size: 270%;
     margin-top: -0.5em;
+}
+
+.link-logo, .git-logo {
+    height: 2.2em;
+    width: auto;
+    text-decoration: none;
+    padding: 0.4em;
 }
 
 /* Breakpoints for Header */
@@ -142,3 +149,5 @@ header {
 header h1 {
     animation: bounce 10s running linear infinite;
 }
+
+/* -- About Me -- */
