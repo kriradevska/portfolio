@@ -21,6 +21,15 @@ body {
     font-family: 'Volkhov', serif;
     font-weight: 300;
     position: absolute;
+    color: #383838;
+}
+
+.section {
+    background-color: #f5f5f5;
+    margin-top: 6%;
+    border-radius: 0.5em;
+    height: fit-content;
+    opacity: 0.9;
 }
 
 /* -- Header -- */
@@ -63,6 +72,7 @@ header {
     font-size: 270%;
     margin-top: -0.5em;
     font-family: 'Calligraffitti', cursive;
+    color: #383838;
 }
 
 .link-logo, .git-logo {
@@ -168,19 +178,25 @@ header h1 {
 /* -- About Me -- */
 
 #about-me {
-    background-color: #C0380E;
-    margin-top: 6%;
-    border-radius: 0.5em;
-    height: fit-content;
-    opacity: 0.9;
+    box-shadow: -5px 5px 10px #0a8262;
 }
 
 #text {
-    color: #f5f5f5;
-    font-size: 1.5em;
+    color: #383838;
+    font-size: 1.6em;
     font-weight: 500;
     text-align: justify;
     padding: 1.3em 1em 1em 4em;
     font-family: 'Edu SA Beginner', cursive;
 }
 
+/* -- Projects -- */
+
+#projects {
+    box-shadow: -5px 5px 10px #ab320d;
+}
+
+#project img {
+    max-width: 10px;
+    height: auto;
+}
