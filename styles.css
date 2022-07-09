@@ -10,6 +10,16 @@ body {
     background-color: #f5f5f5;
 }
 
+.bubble {
+    background-color: #f5f5f5;
+    padding: 0.7em;
+    border: solid #0a8262 2px;
+    border-radius: 1em;
+    width: fit-content;
+    font-size: 1.5em;
+    transform: translate(0.5em, -2.2em);
+}
+
 /* -- Header -- */
 
 header {
@@ -151,3 +161,10 @@ header h1 {
 }
 
 /* -- About Me -- */
+
+.about-me {
+    background-color: #C0380E;
+    margin-top: 6%;
+    border-radius: 0.5em;
+}
+
