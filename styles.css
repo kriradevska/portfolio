@@ -209,6 +209,7 @@ h3 {
 
     .projectsdiv {
         flex-direction: column;
+        margin-top: 1.5em;
     }
 
     .projectsdiv div {
