@@ -114,11 +114,11 @@ header {
 /* -- About Me -- */
 
 #text {
-    color: #383838;
-    font-size: 1.6em;
+    color: rgba(35, 35, 35, 1);
+    font-size: 1.2em;
     font-weight: 500;
     text-align: start;
-    padding: 1.3em 1em 1em 4em;
+    padding: 2.3em 1em 1em 3.5em;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -143,7 +143,9 @@ header {
     width: 30%; 
     height: 95%;  
     padding: 2%;
+    background-color: rgba(171, 50, 13, 0.2);
 }
+
 
 #projects img {
     max-width: 60%;
@@ -157,7 +159,7 @@ h3 {
     font-weight: 200;
     font-size: medium;
     color: #383838;
-}
+}}
 
 /* Breakpoints */
 
@@ -177,6 +179,22 @@ h3 {
 
     .avatar {
         max-width: 90%
+    }
+
+    .projectsdiv {
+        flex-direction: column;
+    }
+
+    .projectsdiv div {
+        width: 80%
+    }
+
+    #text {
+        font-size: 1em;
+    }
+
+    .bubble {
+        font-size: 0.9em;
     }
 }
 
@@ -207,6 +225,24 @@ h3 {
     .greeting h2 {
         font-size: 340%;
     }
+
+    #text {
+        font-size: 300%;
+    }
+
+    .bubble {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2.3em;
+    }
+
+    .button button {
+        width: 10em;
+        height: em;
+        font-size: 2.3em;
+    }
 }
 
 /* Animation of h1*/
@@ -214,6 +250,7 @@ h3 {
 @keyframes bounce {
     0% {
         transform: translate(0);
+        opacity: 0.3;
     }
     10% {
         transform: translate(0, 2%);
@@ -245,6 +282,7 @@ h3 {
     }
     100% {
         transform: translate(0);
+        opacity: 0.3;
     }
 }
 
