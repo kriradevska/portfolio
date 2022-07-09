@@ -36,7 +36,15 @@ main {
     height: fit-content;
     opacity: 0.9;
     border-top: 1px solid rgba(92, 92, 92, 0.3);
-    /*border-bottom: 1px solid rgba(92, 92, 92, 0.3) ;*/
+}
+
+.button button{
+    border: 1px solid rgba(92, 92, 92, 0.3);
+    color: #383838;
+    background-color: #f5f5f5;
+    width: 7em;
+    height: 2em;
+
 }
 
 /* -- Header -- */
