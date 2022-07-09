@@ -153,11 +153,38 @@ header {
     margin: 1%;
 }
 
+.projectsdiv p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9em;
+}
+
 h3 {
     font-family: 'Comfortaa', cursive;
     font-weight: 200;
     font-size: medium;
     color: #383838;
+}
+
+.list {
+    font-family: 'Comfortaa', cursive; 
+    font-weight: 300;
+}
+
+/* -- Skills -- */
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.icons img {
+    max-width: 13%;
+    height: auto;
+    margin: 2%;
 }
 
 /* Breakpoints */
@@ -194,6 +221,15 @@ h3 {
 
     .bubble {
         font-size: 0.9em;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .icons img{
+        max-width: 60%;
+
     }
 }
 
