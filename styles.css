@@ -10,10 +10,15 @@ body {
     background-color: #f5f5f5;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .bubble {
     background-color: #f5f5f5;
     padding: 0.7em;
-    border: solid #0a8262 2px;
+    border: solid rgba(171, 50, 13, 0.2) 2px;
     border-radius: 1em;
     width: fit-content;
     font-size: 1.5em;
@@ -30,6 +35,8 @@ body {
     border-radius: 0.5em;
     height: fit-content;
     opacity: 0.9;
+    border-top: 1px solid rgba(92, 92, 92, 0.3);
+    /*border-bottom: 1px solid rgba(92, 92, 92, 0.3) ;*/
 }
 
 /* -- Header -- */
@@ -41,6 +48,7 @@ header {
     justify-content: center;
     background-image: url(https://raw.githubusercontent.com/kriradevska/portfolio/main/style/marble.webp);
     padding: 2em;
+    margin: 2%;
 }
 
 .avatar {
@@ -177,26 +185,47 @@ header h1 {
 
 /* -- About Me -- */
 
-#about-me {
-    box-shadow: -5px 5px 10px #0a8262;
-}
-
 #text {
     color: #383838;
     font-size: 1.6em;
     font-weight: 500;
-    text-align: justify;
+    text-align: start;
     padding: 1.3em 1em 1em 4em;
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 
 /* -- Projects -- */
 
-#projects {
-    box-shadow: -5px 5px 10px #ab320d;
+.projectsdiv {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#project img {
-    max-width: 10px;
+.projectsdiv div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid 1px rgba(171, 50, 13, 0.2);
+    align-items: center;
+    margin: 2%;
+    margin-top: 4%;
+    text-align: center;
+    height: 95%;
+    width: 30%;
+    padding: 2%;
+}
+
+#projects img {
+    max-width: 60%;
     height: auto;
+    flex-shrink: 1;
+    margin: 1%;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    font-size: medium;
+    color: #383838;
 }
